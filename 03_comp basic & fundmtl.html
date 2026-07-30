@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Basics - Number System</title>
+</head>
+<body>
+
+    <h1>Computer Basics & Fundamentals</h1>
+
+    <h2>Topics</h2>
+    <ol>
+        <li>Digital Logic (AND, OR, NOT, XOR)</li>
+        <li>Number System</li>
+        <li>Operating System (OS) Basics</li>
+        <li>Computer Architecture</li>
+        <li>Computer Networks</li>
+    </ol>
+
+    <hr>
+
+    <h2>Number System</h2>
+
+    <p>
+        Number System ka matlab hai numbers ko represent karne ka tarika.
+    </p>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Number System</th>
+            <th>Base</th>
+            <th>Digits Used</th>
+        </tr>
+
+        <tr>
+            <td>Binary</td>
+            <td>2</td>
+            <td>0,1</td>
+        </tr>
+
+        <tr>
+            <td>Octal</td>
+            <td>8</td>
+            <td>0,1,2,3,4,5,6,7</td>
+        </tr>
+
+        <tr>
+            <td>Decimal</td>
+            <td>10</td>
+            <td>0-9</td>
+        </tr>
+
+        <tr>
+            <td>Hexadecimal</td>
+            <td>16</td>
+            <td>0-9, A, B, C, D, E, F</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Number System Conversion</h2>
+
+    <h3>1. Decimal to Binary</h3>
+
+    <p><b>Example:</b> (1729)<sub>10</sub></p>
+
+    <p>
+        Number ko 2 se baar-baar divide karte hain aur
+        remainder ko niche se upar likhte hain.
+    </p>
+
+    <pre>
+1729 ÷ 2 = 864  R1
+864  ÷ 2 = 432  R0
+432  ÷ 2 = 216  R0
+216  ÷ 2 = 108  R0
+108  ÷ 2 = 54   R0
+54   ÷ 2 = 27   R0
+27   ÷ 2 = 13   R1
+13   ÷ 2 = 6    R1
+6    ÷ 2 = 3    R0
+3    ÷ 2 = 1    R1
+1    ÷ 2 = 0    R1
+    </pre>
+
+    <p>
+        <b>(1729)<sub>10</sub> = (11011000001)<sub>2</sub></b>
+    </p>
+
+    <hr>
+
+    <h3>2. Binary to Decimal</h3>
+
+    <p><b>Example:</b> (11011000001)<sub>2</sub></p>
+
+    <pre>
+1 × 2¹⁰ = 1024
+1 × 2⁹  = 512
+0 × 2⁸  = 0
+1 × 2⁷  = 128
+1 × 2⁶  = 64
+0 × 2⁵  = 0
+0 × 2⁴  = 0
+0 × 2³  = 0
+0 × 2²  = 0
+0 × 2¹  = 0
+1 × 2⁰  = 1
+------------------
+Total = 1729
+    </pre>
+
+    <p>
+        <b>(11011000001)<sub>2</sub> = (1729)<sub>10</sub></b>
+    </p>
+
+    <hr>
+
+    <h3>3. Decimal to Octal</h3>
+
+    <p><b>Example:</b> (1729)<sub>10</sub></p>
+
+    <pre>
+1729 ÷ 8 = 216 R1
+216  ÷ 8 = 27  R0
+27   ÷ 8 = 3   R3
+3    ÷ 8 = 0   R3
+    </pre>
+
+    <p>
+        <b>(1729)<sub>10</sub> = (3301)<sub>8</sub></b>
+    </p>
+
+    <hr>
+
+    <h3>4. Octal to Decimal</h3>
+
+    <p><b>Example:</b> (3301)<sub>8</sub></p>
+
+    <pre>
+3 × 8³ = 1536
+3 × 8² = 192
+0 × 8¹ = 0
+1 × 8⁰ = 1
+----------------
+Total = 1729
+    </pre>
+
+    <p>
+        <b>(3301)<sub>8</sub> = (1729)<sub>10</sub></b>
+    </p>
+
+        <hr>
+
+    <h2>5. Decimal to Hexadecimal</h2>
+
+    <p><b>Example:</b> (1729)<sub>10</sub></p>
+
+    <p>
+        Number ko 16 se repeatedly divide karte hain aur
+        remainder ko bottom to top likhte hain.
+    </p>
+
+    <pre>
+1729 ÷ 16 = 108 R1
+108  ÷ 16 = 6   RC (12 = C)
+6    ÷ 16 = 0   R6
+    </pre>
+
+    <p>
+        <b>(1729)<sub>10</sub> = (6C1)<sub>16</sub></b>
+    </p>
+
+    <hr>
+
+    <h2>6. Hexadecimal to Decimal</h2>
+
+    <p><b>Example:</b> (6C1)<sub>16</sub></p>
+
+    <pre>
+6 × 16² = 6 × 256 = 1536
+C × 16¹ = 12 × 16 = 192
+1 × 16⁰ = 1 × 1 = 1
+-------------------------
+Total = 1729
+    </pre>
+
+    <p>
+        <b>(6C1)<sub>16</sub> = (1729)<sub>10</sub></b>
+    </p>
+
+    <hr>
+
+    <h2>7. Octal to Binary</h2>
+
+    <p><b>Example:</b> (3301)<sub>8</sub></p>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Octal Digit</th>
+            <th>Binary</th>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>011</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>011</td>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>000</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>001</td>
+        </tr>
+    </table>
+
+    <p>
+        <b>(3301)<sub>8</sub> = (011011000001)<sub>2</sub></b>
+    </p>
+
+    <hr>
+
+    <h2>8. Binary to Octal</h2>
+
+    <p><b>Example:</b> (011011000001)<sub>2</sub></p>
+
+    <p>Binary ko right se 3-3 bits ke group me divide karte hain.</p>
+
+    <pre>
+011 | 011 | 000 | 001
+
+011 = 3
+011 = 3
+000 = 0
+001 = 1
+    </pre>
+
+    <p>
+        <b>(011011000001)<sub>2</sub> = (3301)<sub>8</sub></b>
+    </p>
+
+    <hr>
+
+    <h2>9. Hexadecimal to Binary</h2>
+
+    <p><b>Example:</b> (6C1)<sub>16</sub></p>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Hex Digit</th>
+            <th>Binary</th>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>0110</td>
+        </tr>
+
+        <tr>
+            <td>C</td>
+            <td>1100</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0001</td>
+        </tr>
+    </table>
+
+    <p>
+        <b>(6C1)<sub>16</sub> = (011011000001)<sub>2</sub></b>
+    </p>
+
+    <hr>
+
+    <h2>10. Binary to Hexadecimal</h2>
+
+    <p><b>Example:</b> (011011000001)<sub>2</sub></p>
+
+    <p>Binary ko right se 4-4 bits ke group me divide karte hain.</p>
+
+    <pre>
+0110 | 1100 | 0001
+
+0110 = 6
+1100 = C
+0001 = 1
+    </pre>
+
+    <p>
+        <b>(011011000001)<sub>2</sub> = (6C1)<sub>16</sub></b>
+    </p>
+
+    <hr>
+
+    <h1>Digital Logic Gates</h1>
+
+    <h2>Types of Logic Gates</h2>
+
+    <ul>
+        <li>AND Gate (&amp;)</li>
+        <li>OR Gate (|)</li>
+        <li>NOT Gate (!)</li>
+        <li>XOR Gate (^)</li>
+    </ul>
+
+    <hr>
+
+    <h2>AND Gate Truth Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A &amp; B</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>OR Gate Truth Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A | B</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>XOR Gate Truth Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A ^ B</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>NOT Gate Truth Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>A</th>
+            <th>!A</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Summary</h2>
+
+    <ul>
+        <li>Binary Base = 2</li>
+        <li>Octal Base = 8</li>
+        <li>Decimal Base = 10</li>
+        <li>Hexadecimal Base = 16</li>
+        <li>Octal → Binary = 3 bits per digit</li>
+        <li>Hexadecimal → Binary = 4 bits per digit</li>
+        <li>AND = All inputs must be 1</li>
+        <li>OR = Any one input is 1</li>
+        <li>XOR = Inputs must be different</li>
+        <li>NOT = Reverse the input</li>
+    </ul>
+
+    <hr>
+
+<h1>Operating System (OS) Basics</h1>
+
+<p>
+    <b>Operating System (OS)</b> ek system software hai jo User aur Computer Hardware ke beech interface ka kaam karta hai.
+</p>
+
+<h2>Functions of Operating System</h2>
+
+<ul>
+    <li>Memory Management</li>
+    <li>Process Management</li>
+    <li>File Management</li>
+    <li>Device Management</li>
+    <li>Security</li>
+</ul>
+
+<h2>Examples of Operating System</h2>
+
+<ul>
+    <li>Windows</li>
+    <li>Linux</li>
+    <li>macOS</li>
+    <li>Android</li>
+    <li>iOS</li>
+</ul>
+
+<hr>
+
+<h1>Computer Architecture</h1>
+
+<p>
+    Computer Architecture batata hai ki computer ke parts kaise kaam karte hain aur ek dusre se kaise connected hote hain.
+</p>
+
+<h2>Main Components</h2>
+
+<ul>
+    <li>CPU (Central Processing Unit)</li>
+    <li>Memory (RAM, ROM)</li>
+    <li>Input Devices</li>
+    <li>Output Devices</li>
+    <li>Storage Devices</li>
+</ul>
+
+<h2>CPU Parts</h2>
+
+<ul>
+    <li>ALU (Arithmetic Logic Unit)</li>
+    <li>CU (Control Unit)</li>
+    <li>Registers</li>
+</ul>
+
+<h2>Input Devices</h2>
+
+<ul>
+    <li>Keyboard</li>
+    <li>Mouse</li>
+    <li>Scanner</li>
+    <li>Microphone</li>
+</ul>
+
+<h2>Output Devices</h2>
+
+<ul>
+    <li>Monitor</li>
+    <li>Printer</li>
+    <li>Speaker</li>
+    <li>Projector</li>
+</ul>
+
+<hr>
+
+<h1>Computer Networks</h1>
+
+<p>
+    Computer Network ka matlab hai do ya do se adhik computers ko connect karke data share karna.
+</p>
+
+<h2>Advantages</h2>
+
+<ul>
+    <li>Data Sharing</li>
+    <li>Resource Sharing</li>
+    <li>Fast Communication</li>
+    <li>Internet Access</li>
+</ul>
+
+<h2>Types of Network</h2>
+
+<ol>
+    <li><b>PAN</b> - Personal Area Network</li>
+    <li><b>LAN</b> - Local Area Network</li>
+    <li><b>MAN</b> - Metropolitan Area Network</li>
+    <li><b>WAN</b> - Wide Area Network</li>
+</ol>
+
+<h2>Network Devices</h2>
+
+<ul>
+    <li>Hub</li>
+    <li>Switch</li>
+    <li>Router</li>
+    <li>Modem</li>
+</ul>
+
+<h2>Internet Terms</h2>
+
+<ul>
+    <li>IP Address</li>
+    <li>MAC Address</li>
+    <li>DNS</li>
+    <li>URL</li>
+</ul>
+
+<hr>
+
+<h1>Quick Revision</h1>
+
+<ul>
+    <li>Operating System = User aur Hardware ke beech Interface</li>
+    <li>CPU = Brain of Computer</li>
+    <li>ALU = Arithmetic aur Logical Operations</li>
+    <li>CU = Sabhi Parts ko Control karta hai</li>
+    <li>RAM = Temporary Memory</li>
+    <li>ROM = Permanent Memory</li>
+    <li>LAN = Chhota Area</li>
+    <li>MAN = City Level Network</li>
+    <li>WAN = Country/World Level Network</li>
+    <li>Router = Different Networks ko Connect karta hai</li>
+    <li>Switch = Same Network ke Devices ko Connect karta hai</li>
+</ul>
+
+</body>
+</html>
