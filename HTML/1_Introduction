@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML introduction</title>
+</head>
+<body>
+<h3>Date:03/08/2026</h3>
+<h1>Introduction to HTML</h1>
+<p>
+HTML (HyperText Markup Language) is a markup language used to create and
+structure web pages. It defines the content of a webpage using HTML
+elements (tags), which are displayed in a web browser.
+</p>
 
+<hr>
+
+<h1>Key Features of HTML</h1>
+
+<h2>1. Simple and Easy to Learn</h2>
+
+<p>
+HTML has a simple and straightforward syntax based on text and elements.
+Developers can quickly learn it and start creating web pages without
+requiring programming language knowledge.
+</p>
+
+<h2>2. Platform Independent</h2>
+
+<p>
+HTML documents run on any operating system, including Windows, Linux,
+macOS, and mobile devices.
+</p>
+
+<h2>3. Tag-Based Language</h2>
+
+<p>
+HTML uses predefined tags to define the structure of a webpage, including
+headings, paragraphs, tables, images, fonts, and many other elements.
+</p>
+
+<h2>4. Hyperlink Support</h2>
+
+<p>
+HTML allows linking one page to another page using hyperlinks. Hyperlinks
+enable smooth navigation between web pages, documents, and external
+resources.
+</p>
+
+<h2>5. Multimedia Support</h2>
+
+<p>
+HTML supports embedded images, audio, video, SVG graphics, and other
+multimedia elements directly into web pages without requiring external
+plugins.
+</p>
+
+<h2>6. Forms and User Input</h2>
+
+<p>
+HTML provides form elements such as text input, buttons, checkboxes,
+radio buttons, and many more to collect user information efficiently.
+</p>
+
+<h2>7. Integration with CSS and JavaScript</h2>
+
+<p>
+HTML works seamlessly with CSS for styling and JavaScript for adding
+interactivity, making it the foundation of modern web development.
+</p>
+
+<hr>
+
+<h1>What Should Be Inside the &lt;head&gt; Tag?</h1>
+
+<ul>
+    <li>Title Tag</li>
+    <li>Favicon Tag</li>
+    <li>CDN Links</li>
+    <li>External CSS Links</li>
+    <li>Internal CSS</li>
+    <li>Meta (SEO) Tags</li>
+    <li>Third-Party JavaScript Links</li>
+</ul>
+
+<hr>
+
+<h1>What Should Be Inside the &lt;body&gt; Tag?</h1>
+
+<ul>
+    <li>Headings</li>
+    <li>Paragraphs</li>
+    <li>Tables</li>
+    <li>Lists</li>
+    <li>Forms</li>
+    <li>Anchor Tags</li>
+    <li>Div Elements</li>
+    <li>External JavaScript Links</li>
+    <li>Internal JavaScript</li>
+</ul>
