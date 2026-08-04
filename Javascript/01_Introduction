@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to JavaScript</title>
+</head>
+<body>
 
+ <h3>Date:30/07/2026</h3>
+<h1>Introduction to JavaScript</h1>
+
+<p>
+JavaScript is a <b>high-level programming language</b> developed by
+<b>Brendan Eich</b> in <b>1995</b> at <b>Netscape Communications</b>.
+Originally, JavaScript was designed for <b>frontend web development</b>.
+Today, JavaScript is one of the core technologies of the web along with
+<b>HTML</b> and <b>CSS</b>.
+
+Nowadays, JavaScript is also used for <b>backend development</b> using
+<b>Node.js</b>.
+</p>
+
+<hr>
+
+<h1>Key Features of JavaScript</h1>
+
+<h2>1. Event-Driven Programming Language</h2>
+
+<p>
+JavaScript is an <b>event-driven programming language</b>. It responds
+to different user actions such as:
+</p>
+
+<ul>
+    <li>Mouse Click</li>
+    <li>Mouse Movement</li>
+    <li>Keyboard Input</li>
+    <li>Form Submission</li>
+</ul>
+
+<p>
+Event handling helps developers build responsive and interactive web
+applications that react to user actions in real time.
+</p>
+
+<hr>
+
+<h2>2. Interactivity</h2>
+
+<p>
+JavaScript allows developers to create interactive web pages.
+It can add features like:
+</p>
+
+<ul>
+    <li>Interactive Forms</li>
+    <li>Animations</li>
+    <li>Clickable Buttons</li>
+    <li>Dynamic Content</li>
+</ul>
+
+<p>
+These features improve the user experience and make websites more
+interactive.
+</p>
+
+<hr>
+
+<h2>3. Interpreted Programming Language</h2>
+
+<p>
+JavaScript code is interpreted and executed line by line by the
+JavaScript engine.
+</p>
+
+<p>
+Modern JavaScript engines use <b>JIT (Just-In-Time Compilation)</b>,
+which improves the overall performance and execution speed.
+</p>
+
+<hr>
+
+<h2>4. Object-Oriented Programming (OOP) Support</h2>
+
+<p>
+JavaScript supports Object-Oriented Programming concepts such as:
+</p>
+
+<ul>
+    <li>Encapsulation</li>
+    <li>Inheritance</li>
+    <li>Polymorphism</li>
+</ul>
+
+<p>
+These concepts help developers write structured, reusable and modular
+code.
+</p>
+<hr>
+
+<h2>5. Dynamic Typing</h2>
+
+<p>
+JavaScript is a <b>dynamically typed</b> programming language. This means
+you do not need to declare the data type of a variable.
+</p>
+
+<p>
+A variable can store different types of values during program execution.
+For example, a variable can first store a number and later store a string.
+</p>
+
+<p>
+This feature makes JavaScript flexible and easy to use, but sometimes it
+can also cause type-related errors.
+</p>
+
+<hr>
+
+<h2>6. Compatibility with HTML and CSS</h2>
+
+<p>
+JavaScript works easily with <b>HTML</b> and <b>CSS</b>.
+</p>
+
+<p>
+It allows developers to:
+</p>
+
+<ul>
+    <li>Manipulate HTML elements (DOM)</li>
+    <li>Change CSS styles</li>
+    <li>Update page content dynamically</li>
+    <li>Create interactive web pages</li>
+</ul>
+
+<p>
+This integration makes websites more dynamic and user-friendly.
+</p>
+
+<hr>
+
+<h2>7. Browser Support</h2>
+
+<p>
+JavaScript is supported by all modern web browsers such as:
+</p>
+
+<ul>
+    <li>Google Chrome</li>
+    <li>Mozilla Firefox</li>
+    <li>Microsoft Edge</li>
+    <li>Safari</li>
+    <li>Opera</li>
+</ul>
+
+<p>
+JavaScript runs directly inside the browser without installing any
+additional software or plugins.
+</p>
+
+<p>
+Modern browsers use powerful JavaScript engines like:
+</p>
+
+<ul>
+    <li>Google Chrome → V8 Engine</li>
+    <li>Firefox → SpiderMonkey</li>
+    <li>Safari → JavaScriptCore</li>
+</ul>
+
+<p>
+These engines improve the execution speed of JavaScript programs.
+</p>
+
+<hr>
+
+<h2>8. Functional Programming Support</h2>
+
+<p>
+JavaScript also supports the Functional Programming approach.
+</p>
+
+<p>
+It provides features such as:
+</p>
+
+<ul>
+    <li>Functions</li>
+    <li>Arrow Functions</li>
+    <li>Callback Functions</li>
+    <li>Higher-Order Functions</li>
+    <li>Closures</li>
+</ul>
+
+<p>
+These features make JavaScript flexible, reusable and suitable for
+different coding styles.
+</p>
+
+<hr>
+
+<h2>9. Rich Ecosystem and Library Support</h2>
+
+<p>
+JavaScript has a large ecosystem of libraries and frameworks.
+</p>
+
+<p>
+Developers can use millions of packages available through
+<b>NPM (Node Package Manager)</b>.
+</p>
+
+<p>
+Popular JavaScript libraries and frameworks include:
+</p>
+
+<ul>
+    <li>React</li>
+    <li>Angular</li>
+    <li>Vue.js</li>
+    <li>Next.js</li>
+    <li>Express.js</li>
+</ul>
+
+<p>
+These tools help developers build modern web applications quickly and efficiently.
+</p>
+
+<hr>
+
+<h2>10. JSON Support</h2>
+
+<p>
+JavaScript provides excellent support for <b>JSON (JavaScript Object Notation)</b>.
+</p>
+
+<p>
+JSON is widely used to exchange data between web applications,
+servers and REST APIs.
+</p>
+
+<p>
+Because JavaScript works naturally with JSON, it becomes easier to
+create, send and receive data in web applications.
+</p>
+
+<hr>
+
+<h2>Quick Revision</h2>
+
+<ul>
+    <li>JavaScript is a High-Level Programming Language.</li>
+    <li>Developed by Brendan Eich in 1995.</li>
+    <li>Originally created for Frontend Development.</li>
+    <li>Now also used for Backend with Node.js.</li>
+    <li>Event-Driven Programming Language.</li>
+    <li>Supports Object-Oriented Programming.</li>
+    <li>Dynamically Typed Language.</li>
+    <li>Works with HTML and CSS.</li>
+    <li>Supported by all major web browsers.</li>
+    <li>Supports Functional Programming.</li>
+    <li>Rich ecosystem with React, Angular, Vue.js, Next.js and Express.js.</li>
+    <li>Excellent support for JSON and REST APIs.</li>
+</ul>
+<hr>
+
+<h1>Interview Questions</h1>
+
+<h3>1. What is JavaScript?</h3>
+<p>
+JavaScript is a high-level, interpreted programming language used to create interactive web pages.
+</p>
+
+<h3>2. Who developed JavaScript?</h3>
+<p>
+Brendan Eich developed JavaScript in 1995 at Netscape Communications.
+</p>
+
+<h3>3. Is JavaScript Frontend or Backend?</h3>
+<p>
+JavaScript is used for both Frontend and Backend development. Backend development is done using Node.js.
+</p>
+
+<h3>4. What is Dynamic Typing?</h3>
+<p>
+Dynamic Typing means a variable can store different types of data without declaring its data type.
+</p>
+
+<h3>5. What is JSON?</h3>
+<p>
+JSON (JavaScript Object Notation) is a lightweight data format used to exchange data between client and server.
+</p>
+
+<hr>
+
+<h1>Important Points</h1>
+
+<ul>
+    <li>Developer : Brendan Eich</li>
+    <li>Developed In : 1995</li>
+    <li>Company : Netscape Communications</li>
+    <li>Language Type : High-Level</li>
+    <li>Frontend + Backend (Node.js)</li>
+    <li>Event-Driven Language</li>
+    <li>Object-Oriented Programming Support</li>
+    <li>Dynamic Typing</li>
+    <li>Works with HTML & CSS</li>
+    <li>Supports JSON</li>
+    <li>Supports Functional Programming</li>
+    <li>Runs in all modern browsers</li>
+</ul>
+
+<hr>
+
+<h1>Summary</h1>
+
+<p>
+JavaScript is one of the most popular programming languages used in web development.
+It makes websites interactive, works with HTML and CSS, supports Object-Oriented and Functional Programming,
+and is used for both Frontend and Backend development. JavaScript also provides excellent support for JSON,
+making it suitable for building modern web applications.
+</p>
+
+</body>
+</html>
