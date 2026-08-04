@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph</title>
+</head>
+<body>
+    <h3>Date:04/08/2026</h3>
+
+    <p>This is Paragraph1</p>
+    <p>This is Paragraph2</p>
+    <p>This is Paragraph3</p>
+    <p>This is Paragraph4</p>
+    <p>This is Paragraph5</p>
+    <p>This is Paragraph6</p>
+    <p>This is Paragraph7</p>
+    <p>This is Paragraph7</p>
+    <p>This is Paragraph8</p>
+    <p>This is Paragraph9</p>
+    <p>This is Paragraph10</p>
+
+    <h3>Formating Tags:-</h3>
+
+     <p>This is <b>Paragraph1 </b> for testing</p>
+     <p>This is <strong>Paragraph2 </strong>for testing</p> // used for SEO
+     <p>This is <i> Paragraph3 </i> for testing</p>
+     <p>This is <em> Paragraph4 </em>for testing</p> // used for SEO
+     <p>This is <u> Paragraph5 </u> for testing</p>
+     <p>This is <strike>Paragraph6</strike> for testing</p> // old version
+     <p>This is <del>Paragraph7</del> for testing</p>
+     <p>This is <mark>Paragraph8 </mark> for testing</p>
+     <p>This is <small> Paragraph9 </small>for testing</p>
+     <p>This is <sup>Paragraph10 </sup> for testing</p> 
+     <p>This is <sub>Paragraph11 </sub> for testing</p>  
+     <p> <abbr title="write something">CND</abbr> this is used for full form</p>
+
+
+     <p>
+        Nitin Chauhan <br>
+        nitinfullstack33@gmail.com <br>
+        9873848046 <br>
+        Fullstack Consultant <br>
+        Ducat, Noida
+     </p>
+
+     <pre>
+        Nitin Chauhan 
+        nitinfullstack33@gmail.com 
+        9873848046 
+        Fullstack Consultant 
+        Ducat, Noida
+     </pre>
+
+     Element an attributes 
+     an html element represent a complete structure component  of a web page
+     consisting of a starting page , content and an ending tag 
+
+     while html attributes provides extra propoerties or configraction for an 
+     element and is always writen inside the starting tag 
+      example: <abbr title="attributes"> example</abbr>
+
+    <h3> Lists:-</h3>
+    <ol>
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+
+    </ol>
+
+    <ol type="a">
+        <li>MERN Stack</li>
+        <li>Mean stack</li>
+    </ol>
+
+    <ol type="a" start="52">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+
+    </ol>
+
+    <ol type="i">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+
+    </ol>
+     
+    <ol type="I">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+
+    </ol>
+
+
+
+
+
+   
+
+
+
+
+</body>
+</html>
