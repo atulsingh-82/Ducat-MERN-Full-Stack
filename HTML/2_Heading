@@ -52,52 +52,205 @@
         Ducat, Noida
      </pre>
 
-     Element an attributes 
-     an html element represent a complete structure component  of a web page
-     consisting of a starting page , content and an ending tag 
+     <pre><h4>HTML Elements and Attributes  </h4>
+       An html element represent a complete structure component  of a web page
+       consisting of a starting page , content and an ending tag 
 
-     while html attributes provides extra propoerties or configraction for an 
-     element and is always writen inside the starting tag 
-      example: <abbr title="attributes"> example</abbr>
+       While html attributes provides extra propoerties or configraction for an 
+       element and is always writen inside the starting tag 
+       example: <abbr title="attributes"> example</abbr> </pre>
 
     <h3> Lists:-</h3>
     <ol>
         <li>MERN Stack</li>
         <li>Mean Stack</li>
+         <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
     </ol>
 
     <ol type="a">
         <li>MERN Stack</li>
         <li>Mean stack</li>
+         <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
     </ol>
 
     <ol type="a" start="52">
         <li>MERN Stack</li>
         <li>Mean Stack</li>
+         <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
     </ol>
 
     <ol type="i">
         <li>MERN Stack</li>
         <li>Mean Stack</li>
+         <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
     </ol>
      
-    <ol type="I">
+     =================================================
+              <h3> Date:05/08/2026 </h3>
+     =================================================
+    
+
+    <!-- <!DOCTYPE html>
+    <html>
+        <head>
+            <title> ........ </title>
+        </head>
+        <body>
+            ......................
+            ......................
+        </body>
+    </html> -->
+
+     <ol style="list-style-type:urdu;">
         <li>MERN Stack</li>
         <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
     </ol>
 
+     <ol style="list-style-type:tamil;">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
+    </ol>
+     <ol style="list-style-type: gurmukhi;">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
 
+    </ol>
 
+    =====================================
+              Unorderd list
+    =====================================
+     <ul type="disk">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
+     </ul>
 
-   
+      <ul type="circle">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
+     </ul>
 
+      <ul type="square">
+        <li>MERN Stack</li>
+        <li>Mean Stack</li>
+        <li>python</li>
+        <li>php</li>
+        <li>java</li>
+        <li>.net</li>
+        <li>digital marketing</li>
+     </ul>
 
+     ========================================
+              Discription list
+     ========================================
+     
 
+     <dl>
+        <dt>Mern Stack</dt>
+        <dd>JAvascript</dd>
+        <dd>Typescript</dd>
+        <dd>React.js</dd>
+        <dd>Next.js</dd>
+        <dd>Express.js</dd>
+        <dd>MongoDB</dd>
+     </dl>
+      
+      <dl>
+        <dt>Mean stack</dt>
+        <dd>JAvascript</dd>
+        <dd>Typescript</dd>
+        <dd>Angular</dd>
+        <dd>Node.js</dd>
+        <dd>Express.js</dd>
+        <dd>MongoDB</dd>
+     </dl>
 
+      <dl>
+        <dt>Mevn Stack</dt>
+        <dd>JAvascript</dd>
+        <dd>Typescript</dd>
+        <dd>Vue.js</dd>
+        <dd>Node.js</dd>
+        <dd>Express.js</dd>
+        <dd>MongoDB</dd>
+     </dl>
+
+     ==========================================
+               Nested list
+     ==========================================
+     <ul>
+        <li>
+            <h3>Mern Stack</h3>
+             <ul>
+                <li>JAvascript</li>
+                <li>Typescript</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+             </ul>
+        </li>
+     </ul>
+
+     <ul>
+        <li>
+                <h3>Mean Stack</h3>
+             <ul>
+                <li>JAvascript</li>
+                <li>Typescript</li>
+                <li>Angular</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+             </ul>
+        </li>
+    </ul>
+    
 </body>
 </html>
