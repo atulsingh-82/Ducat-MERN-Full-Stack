@@ -99,3 +99,30 @@ interactivity, making it the foundation of modern web development.
     <li>External JavaScript Links</li>
     <li>Internal JavaScript</li>
 </ul>
+<h2>ASCII:-</h2>
+<P>American Standard Code for Information Interchange</P>
+<h3>Total:- 256</h3>
+<pre>
+    A = 65     a = 97      0 = 48
+    B = 66     b = 98      1 = 49
+    C = 67     c = 99      2 = 50
+    .          .           .
+    .          .           . 
+    .          .           .
+    Z = 90     z = 122     9 = 57
+
+    Space = 32
+    Enter = 13
+    etc.
+</pre>
+
+<h2>UNICODE (Universal Character Encoding)</h2>
+<p>Total :- 1114112 </p>
+
+<h3>Shortcut :-</h3>
+<P> <strong>For Multiple cursor :- </strong> Alt + point</P>
+<p> <strong> For Comment :- </strong> Select & press (Ctrl + / )</p>
+<p> <strong> For Multiple Headings and words :- </strong> h1*10>lorem</p>
+<p> <strong> For 1 to 6 Headings :- </strong>h$*6>lorem</p>
+<p> <strong> For Paragraphs :- </strong> p*10>lorem10 </p>
+
