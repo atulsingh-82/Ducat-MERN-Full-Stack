@@ -1,1 +1,709 @@
 
+/*
+===========================================================
+                     Date:- 06-Aug_2026
+===========================================================
+*/
+//Example:
+
+var a = 15 * 5 / 60 * 40 % 50 * 9 - 34 / 10 + 5 % 20
+      + 45 / 10 + 2 * (34 % 10 + 5 * 2 ** 6 % 10000);
+
+console.log(a);
+
+//Note:
+//Arithmetic operators follow operator precedence.
+
+// ============================================================
+// 2. ASSIGNMENT OPERATOR
+// ============================================================
+
+/*
+Assignment Operator:
+
+Used to assign the value of the RHS (Right Hand Side)
+to the LHS (Left Hand Side).
+
+Symbol: =
+
+Example:
+
+let a = 10;        // valid
+
+let sum = a + b;   // valid
+
+let a = b = c;     // valid
+
+
+Category: Binary
+Associativity: Right to Left
+*/
+
+
+// ============================================================
+// 3. COMPOUND / SHORT-HAND ASSIGNMENT OPERATORS
+// ============================================================
+
+/*
+Combination of arithmetic operator + assignment operator.
+
+a = a + b    =>    a += b
+
+a = a - b    =>    a -= b
+
+a = a * b    =>    a *= b
+
+a = a / b    =>    a /= b
+
+a = a % b    =>    a %= b
+
+a = a ** b   =>    a **= b
+*/
+
+
+// ============================================================
+// 4. RELATIONAL OPERATORS
+// ============================================================
+
+/*
+Relational Operators:
+
+Used to compare two values/operands.
+
+<     Less than
+
+<=    Less than or equal to
+
+>     Greater than
+
+>=    Greater than or equal to
+
+!=    Not equal
+      (checks value after type coercion)
+
+!==   Not identical
+      (checks value + data type)
+
+==    Equal
+      (checks value, type coercion can happen)
+
+===   Strictly equal / Identical
+      (checks value + data type)
+*/
+
+
+// ------------------------------------------------------------
+// Examples
+// ------------------------------------------------------------
+
+console.log(155 < 7);          // false
+console.log(155 > 7);          // true
+
+console.log("155" < 7);        // false
+console.log(155 < "7");        // false
+
+console.log("155" < "7");      // true
+// Both are strings, so comparison is lexicographical.
+
+console.log("Amit" < "Nitin");  // true
+console.log("Nitin" < "Amit");  // false
+
+console.log("155" < "Amit");   // true
+
+
+// ============================================================
+// EQUALITY OPERATORS
+// ============================================================
+
+/*
+Expression          ==       !=       ===      !==
+-------------------------------------------------------
+10 == 10            true     false    true     false
+
+10 == "10"           true     false    false    true
+
+10 === 10.0         true     false    true     false
+
+10 === 10.1         false    true     false    true
+*/
+
+
+// ============================================================
+// 5. LOGICAL OPERATORS
+// ============================================================
+
+/*
+Logical Operators:
+
+Used to make a compound condition.
+
+
+Operator       Symbol       Category
+------------------------------------------
+Logical AND      &&         Binary
+
+Logical OR       ||         Binary
+
+Logical NOT       !         Unary
+*/
+
+
+// ------------------------------------------------------------
+// Logical AND (&&)
+// ------------------------------------------------------------
+
+/*
+Returns the first falsy value.
+
+If all values are truthy,
+it returns the last value.
+*/
+
+console.log(10 && 20);       // 20
+console.log(0 && 20);        // 0
+console.log(10 && 0);        // 0
+console.log(0 && 0);         // 0
+console.log(false && 0);     // false
+console.log(0 && false);     // 0
+
+
+// ------------------------------------------------------------
+// Logical OR (||)
+// ------------------------------------------------------------
+
+/*
+Returns the first truthy value.
+
+If all values are falsy,
+it returns the last value.
+*/
+
+console.log(10 || 20);       // 10
+console.log(0 || 20);        // 20
+console.log(10 || 0);        // 10
+console.log(0 || 0);         // 0
+console.log(false || 0);     // 0
+console.log(0 || false);     // false
+
+
+// ------------------------------------------------------------
+// Logical NOT (!)
+// ------------------------------------------------------------
+
+/*
+NOT operator reverses the truthiness of a value.
+*/
+
+console.log(!0);             // true
+console.log(!10);            // false
+console.log(!false);         // true
+console.log(!true);          // false
+
+
+// ============================================================
+// FALSY VALUES IN JAVASCRIPT
+// ============================================================
+
+/*
+The following values are falsy:
+
+0
+-0
+0n
+false
+undefined
+null
+""
+NaN
+
+Most other values are truthy.
+*/
+
+
+// ============================================================
+// 6. BITWISE OPERATORS
+// ============================================================
+
+/*
+Bitwise operators work on the binary representation
+of numbers.
+*/
+
+
+/*
+Operator                Symbol       Category
+------------------------------------------------
+Bitwise AND                &          Binary
+
+Bitwise OR                 |          Binary
+
+Bitwise XOR                ^          Binary
+
+Bitwise Left Shift        <<          Binary
+
+Bitwise Right Shift       >>          Binary
+
+Bitwise NOT                ~          Unary
+*/
+
+
+// ============================================================
+// BITWISE TRUTH TABLE
+// ============================================================
+
+/*
+ a    b       a & b       a | b       a ^ b
+----------------------------------------------
+ 0    0          0           0           0
+
+ 0    1          0           1           1
+
+ 1    0          0           1           1
+
+ 1    1          1           1           0
+*/
+
+
+// ============================================================
+// BITWISE EXAMPLES
+// ============================================================
+
+console.log(5 & 3);       // 1
+
+console.log(5 | 3);       // 7
+
+console.log(5 ^ 3);       // 6
+
+console.log(5 << 1);      // 10
+
+console.log(5 >> 1);      // 2
+
+console.log(~5);          // -6
+
+
+// ============================================================
+// OPERATOR PRECEDENCE — QUICK REVISION
+// ============================================================
+
+/*
+Arithmetic:
+
++   -   *   /   %   **
+
+
+Assignment:
+
+=   +=   -=   *=   /=   %=   **=
+
+
+Relational:
+
+<   <=   >   >=   !=   !==   ==   ===
+
+
+Logical:
+
+&&   ||   !
+
+
+Bitwise:
+
+&   |   ^   <<   >>   ~
+*/
+
+
+// ============================================================
+// IMPORTANT DIFFERENCE
+// ============================================================
+
+/*
+
+=      Assignment
+
+==     Loose Equality
+       Checks value after type coercion.
+
+===    Strict Equality
+       Checks value AND data type.
+
+!=     Loose Not Equal
+
+!==    Strict Not Equal
+
+
+Example:
+
+10 == "10"      // true
+
+10 === "10"     // false
+
+10 != "10"      // false
+
+10 !== "10"     // true
+*/
+
+// ==============================================
+//             Date:-  10-Aug-2026
+// ==============================================
+/*
+====================================================
+        JAVASCRIPT — BITWISE OPERATORS NOTES
+====================================================
+
+Operators:
+&   -> Bitwise AND
+|   -> Bitwise OR
+^   -> Bitwise XOR
+<<  -> Left Shift
+>>  -> Right Shift
+~   -> Bitwise NOT
+====================================================
+*/
+
+
+// ==================================================
+// 1. BINARY REPRESENTATION
+// ==================================================
+
+// 78 = 01001110
+// 155 = 10011011
+
+
+// ==================================================
+// 2. BITWISE AND (&)
+// ==================================================
+
+// Rule:
+// 1 & 1 = 1
+// Otherwise = 0
+
+let a = 78;
+let b = 155;
+
+let c = a & b;
+
+console.log("a & b =", c);
+
+// Output: 10
+
+/*
+   78  = 01001110
+   155 = 10011011
+         --------
+   &     00001010
+
+   00001010
+   = 8 + 2
+   = 10
+*/
+
+
+// Another Example
+
+a = 178;
+b = 55;
+
+c = a & b;
+
+console.log("178 & 55 =", c);
+
+// Output: 50
+
+/*
+   178 = 10110010
+    55 = 00110111
+         --------
+   &     00110010
+
+   00110010
+   = 32 + 16 + 2
+   = 50
+*/
+
+
+// ==================================================
+// 3. BITWISE OR (|)
+// ==================================================
+
+// Rule:
+// 0 | 0 = 0
+// Otherwise = 1
+
+a = 78;
+b = 155;
+
+let d = a | b;
+
+console.log("a | b =", d);
+
+// Output: 223
+
+/*
+   78  = 01001110
+   155 = 10011011
+         --------
+   |     11011111
+
+   11011111
+   = 128 + 64 + 16 + 8 + 4 + 2 + 1
+   = 223
+*/
+
+
+// ==================================================
+// 4. BITWISE XOR (^)
+// ==================================================
+
+// Rule:
+// Same bits      = 0
+// Different bits = 1
+
+a = 78;
+b = 155;
+
+let e = a ^ b;
+
+console.log("a ^ b =", e);
+
+// Output: 213
+
+/*
+   78  = 01001110
+   155 = 10011011
+         --------
+   ^     11010101
+
+   11010101
+   = 128 + 64 + 16 + 4 + 1
+   = 213
+*/
+
+
+// ==================================================
+// 5. LEFT SHIFT (<<)
+// ==================================================
+
+// Left Shift:
+// Bits move towards LEFT.
+
+// Shortcut:
+
+// num << n
+// = num * 2^n
+
+
+let num = 78;
+
+console.log("78 << 3 =", num << 3);
+
+// Output: 624
+
+/*
+   78 << 3
+
+   = 78 * 2^3
+   = 78 * 8
+   = 624
+*/
+
+
+// Another Example:
+
+console.log("5 << 2 =", 5 << 2);
+
+// 5 * 2^2
+// 5 * 4
+// = 20
+
+
+// ==================================================
+// 6. RIGHT SHIFT (>>)
+// ==================================================
+
+// Right Shift:
+// Bits move towards RIGHT.
+
+// Shortcut:
+
+// num >> n
+// = num / 2^n
+
+num = 624;
+
+console.log("624 >> 3 =", num >> 3);
+
+// Output: 78
+
+/*
+   624 >> 3
+
+   = 624 / 2^3
+   = 624 / 8
+   = 78
+*/
+
+
+// Another Example:
+
+console.log("20 >> 2 =", 20 >> 2);
+
+// 20 / 2^2
+// 20 / 4
+// = 5
+
+
+// ==================================================
+// 7. BITWISE NOT (~)
+// ==================================================
+
+// Bitwise Negative / NOT Operator
+
+// Formula:
+
+// ~x = -(x + 1)
+
+// OR
+
+// ~x = -x - 1
+
+
+let x = 20;
+
+console.log("~20 =", ~x);
+
+// Output: -21
+
+
+/*
+   ~20
+
+   = -20 - 1
+   = -21
+*/
+
+
+// ==================================================
+// 8. -~x
+// ==================================================
+
+console.log("-~20 =", -~x);
+
+// Output: 21
+
+/*
+   ~20 = -21
+
+   -~20
+   = -(-21)
+   = 21
+*/
+
+
+// ==================================================
+// 9. NEGATIVE NUMBER WITH ~
+// ==================================================
+
+x = -30;
+
+console.log("~-30 =", ~x);
+
+// Output: 29
+
+/*
+   ~(-30)
+
+   = -(-30) - 1
+   = 30 - 1
+   = 29
+*/
+
+
+console.log("-~-30 =", -~x);
+
+// Output: -29
+
+
+// ==================================================
+// 10. QUICK REVISION
+// ==================================================
+
+/*
+
+&  = AND
+|  = OR
+^  = XOR
+<< = Left Shift
+>> = Right Shift
+~  = Bitwise NOT
+
+
+AND (&)
+----------------
+1 & 1 = 1
+1 & 0 = 0
+0 & 1 = 0
+0 & 0 = 0
+
+
+OR (|)
+----------------
+1 | 1 = 1
+1 | 0 = 1
+0 | 1 = 1
+0 | 0 = 0
+
+
+XOR (^)
+----------------
+1 ^ 1 = 0
+1 ^ 0 = 1
+0 ^ 1 = 1
+0 ^ 0 = 0
+
+
+LEFT SHIFT
+----------------
+num << n = num * 2^n
+
+
+RIGHT SHIFT
+----------------
+num >> n = num / 2^n
+
+
+BITWISE NOT
+----------------
+~x = -(x + 1)
+
+*/
+
+
+// ==================================================
+// 11. FINAL PRACTICE
+// ==================================================
+
+a = 78;
+b = 155;
+
+console.log("AND (&) =", a & b);
+console.log("OR (|)  =", a | b);
+console.log("XOR (^) =", a ^ b);
+
+console.log("Left Shift =", a << 3);
+console.log("Right Shift =", 624 >> 3);
+
+console.log("NOT (~) =", ~a);
+console.log("-NOT (-~) =", -~a);
+
+
+/*
+OUTPUT:
+
+AND (&) = 10
+OR (|)  = 223
+XOR (^) = 213
+Left Shift = 624
+Right Shift = 78
+NOT (~) = -79
+-NOT (-~) = 79
+*/
