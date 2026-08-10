@@ -1,0 +1,393 @@
+// ==============================
+//      Date :- 05/Aug?2026
+// ==============================
+
+// ==============================
+// Operators
+// ==============================
+
+/*
+Operators are special symbols used to perform
+operations on operands (variables, constants,
+or values).
+*/
+
+// ==============================
+// Categories of Operators
+// ==============================
+
+/*
+1. Unary Operator
+   -> Requires one operand.
+
+2. Binary Operator
+   -> Requires two operands.
+
+3. Ternary Operator
+   -> Requires three operands.
+*/
+
+// ==============================
+// Types of Operators
+// ==============================
+
+/*
+
+1. Arithmetic Operators
+2. Assignment Operators
+3. Compound Assignment Operators
+4. Relational Operators
+5. Logical Operators
+6. Bitwise Operators
+7. Conditional (Ternary) Operator
+8. Increment Operators
+9. Decrement Operators
+10. Miscellaneous Operators
+
+*/
+
+// ==============================
+// Arithmetic Operators
+// ==============================
+
+/*
+
++   Addition
+
+-   Subtraction
+
+*   Multiplication
+
+/   Division (Quotient)
+
+%   Modulus (Remainder)
+
+**  Exponent (Power)
+
+*/
+
+// ==============================
+// Operator Precedence
+// ==============================
+
+/*
+
+1. ()
+2. **
+3. * / %
+4. + -
+
+Associativity
+
++, -, *, /, %  --> Left to Right
+
+**             --> Right to Left
+
+*/
+
+// ==============================
+// Additions Examples
+// ==============================
+
+console.log(15 + 6); // 21
+
+console.log("15" + 6); // "156"
+
+console.log("15" + "6"); // "156"
+
+console.log("15" + "Hello"); // "15Hello"
+
+console.log(true + true); // 2
+
+console.log(false + false); // 0
+
+console.log(true + false); // 1
+
+console.log(undefined + undefined); // NaN
+
+console.log(null + null); // 0
+
+console.log(null + undefined); // NaN
+
+console.log(true + undefined); // NaN
+
+console.log(10 + undefined); // NaN
+
+// ==============================
+// Substraction Examples
+// ==============================
+console.log(15 - 6); // 9
+
+console.log("15" - 6); // 9
+
+console.log("15" - "6"); // 9
+
+console.log("15" - "Hello"); // NaN
+
+console.log(true - true); // 0
+
+console.log(false - false); // 0
+
+console.log(true - false); // 0
+
+console.log(undefined - undefined); // NaN
+
+console.log(null - null); // 0
+
+console.log(null - undefined); // NaN
+
+console.log(true - undefined); // NaN
+
+console.log(10 - undefined); // NaN
+
+// ==============================
+// Multiply Examples
+// ==============================
+
+console.log(15 * 6); // 90
+
+console.log("15" * 6); // 90
+
+console.log("15" * "6"); // 90
+
+console.log("15" * "Hello"); // NaN
+
+console.log(true * true); // 1
+
+console.log(false * false); // 0
+
+console.log(true * false); // 0
+
+console.log(undefined * undefined); // NaN
+
+console.log(null * null); // 0
+
+console.log(null * undefined); // NaN
+
+console.log(true * undefined); // NaN
+
+console.log(10 * undefined); // NaN
+
+// ==============================
+// Division Example
+// ==============================
+console.log(15 / 6); // 2.5
+
+console.log("15" / 6); // 2.5
+
+console.log("15" / "6"); // 2.5
+
+console.log("15" / "Hello"); // NaN
+
+console.log(true / true); // 1
+
+console.log(false / false); // NaN
+
+console.log(true / false); // inf
+
+console.log(undefined / undefined); // NaN
+
+console.log(null / null); // NaN
+
+console.log(null / undefined); // NaN
+
+console.log(true / undefined); // NaN
+
+console.log(10 / undefined); // NaN
+
+// ==============================
+//  % Example
+// ==============================
+console.log(15 % 6); // 3
+
+console.log("15" % 6); // 3
+
+console.log("15" % "6"); // 3
+
+console.log("15" % "Hello"); // NaN
+
+console.log(true % true); // 0
+
+console.log(false % false); // NaN
+
+console.log(true % false); // NaN
+
+console.log(undefined % undefined); // NaN
+
+console.log(null % null); // NaN
+
+console.log(null % undefined); // NaN
+
+console.log(true % undefined); // NaN
+
+console.log(10 % undefined); // NaN
+
+// ==============================
+//  Power **
+// ==============================
+console.log(15 ** 6); // 11390625
+
+console.log("15" ** 6); // 11390625
+
+console.log("15" ** "6"); // 11390625
+
+console.log("15" ** "Hello"); // NaN
+
+console.log(true ** true); // 1
+
+console.log(false ** false); // 1
+
+console.log(true ** false); // 1
+
+console.log(undefined ** undefined); // NaN
+
+console.log(null ** null); // 1
+
+console.log(null ** undefined); // NaN
+
+console.log(true ** undefined); // NaN
+
+console.log(10 ** undefined); // NaN
+
+// ==============================
+// Important Notes
+// ==============================
+
+/*
+
+prompt()      -> Returns String
+
+Number()      -> Converts into Number
+
+parseInt()    -> Converts into Integer
+
+parseFloat()  -> Converts into Decimal Number
+
+NaN           -> Not a Number
+
+Infinity      -> Infinite Value
+
+null          -> Numeric value = 0
+
+undefined     -> Converted result = NaN
+
+*/
+
+/*
+======================================
+             HOME WORK
+======================================    
+// prompt can't run without html file.         
+
+// WAP to print area of Circle -> area = 3.14*r*r
+{
+  let r = Number(prompt("Enter Radius:"));
+
+  let area = 3.14 * r * r;
+
+  console.log(`Radius = ${r}`);
+  console.log(`Area of Circle = ${area}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to print area of Rectangle -> area = l*b
+{
+  let l = Number(prompt("Enter Length:"));
+  let b = Number(prompt("Enter Breadth:"));
+
+  let area = l * b;
+
+  console.log(`Length = ${l}`);
+  console.log(`Breadth = ${b}`);
+  console.log(`Area of Rectangle = ${area}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to print area of Cubied -> 2*(l*b + b*h + h*l)
+{
+  let l = Number(prompt("Enter Length:"));
+  let b = Number(prompt("Enter Breadth:"));
+  let h = Number(prompt("Enter Height:"));
+
+  let area = 2 * (l * b + b * h + h * l);
+
+  console.log(`Length = ${l}`);
+  console.log(`Breadth = ${b}`);
+  console.log(`Height = ${h}`);
+  console.log(`Surface Area of Cuboid = ${area}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to print area of Right angle traingle -> (base * Height)/2
+{
+  let base = Number(prompt("Enter Base:"));
+  let height = Number(prompt("Enter Height:"));
+
+  let area = (base * height) / 2;
+
+  console.log(`Base = ${base}`);
+  console.log(`Height = ${height}`);
+  console.log(`Area of Triangle = ${area}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to print area of Square -> area = side*side
+{
+  let side = Number(prompt("Enter Side:"));
+
+  let area = side * side;
+
+  console.log(`Side = ${side}`);
+  console.log(`Area of Square = ${area}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to swap value of two variables
+{
+  let a = Number(prompt("Enter First Number:"));
+  let b = Number(prompt("Enter Second Number:"));
+
+  console.log("Before Swapping");
+  console.log(`a = ${a}`);
+  console.log(`b = ${b}`);
+
+  let temp = a;
+  a = b;
+  b = temp;
+
+  console.log("After Swapping");
+  console.log(`a = ${a}`);
+  console.log(`b = ${b}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to calculate temp.in F from C -> i.e => f=C*9/5+32
+{
+  let c = Number(prompt("Enter Temperature in Celsius:"));
+
+  let f = (c * 9) / 5 + 32;
+
+  console.log(`Celsius = ${c}`);
+  console.log(`Fahrenheit = ${f}`);
+}
+
+console.log("--------------------------------");
+
+// WAP to calculate temp.in C from F -> i.e => (F-32)*5/9
+{
+  let f = Number(prompt("Enter Temperature in Fahrenheit:"));
+
+  let c = ((f - 32) * 5) / 9;
+
+  console.log(`Fahrenheit = ${f}`);
+  console.log(`Celsius = ${c}`);
+}
+
+console.log("--------------------------------");
+*/
