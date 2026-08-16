@@ -4,9 +4,9 @@ This repository contains my personal notes from the MERN full Stack course at Du
 
 ## 📖 Topics Covered
 
-- HTML
+- HTML (learning)
 - CSS (coming Soon)
-- JavaScript(coming Soon)
+- JavaScript (learning)
 - React.js (Coming Soon)
 - Node.js (Coming Soon)
 - Express.js (Coming Soon)
