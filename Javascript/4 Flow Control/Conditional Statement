@@ -1,1 +1,611 @@
+/*
+========================================================
+                Date :- 11-Aug-2026
+========================================================
 
+========================================================
+        JAVASCRIPT - FLOW CONTROL STATEMENTS
+========================================================
+
+Flow Control Statements or Decision Making Statements
+
+1) Conditional Statements or Selection Statements
+   i)   if statement
+   ii)  if-else statement
+   iii) Nested if-else statement
+   iv)  if-else-if ladder statement
+   v)   switch case statement
+
+2) Iteration Statements or Loops
+   i)   for loop
+   ii)  for...in loop
+   iii) for...of loop
+   iv)  while loop
+   v)   do...while loop
+   vi)  Nested loop
+
+3) Jump Statements
+   i)   break statement
+   ii)  continue statement
+*/
+
+
+/*
+========================================================
+        1. CONDITIONAL STATEMENTS
+========================================================
+
+Conditional statements or selection statements are used
+when execution of a statement/block depends on a condition.
+*/
+
+
+/*
+========================================================
+        IF STATEMENT
+========================================================
+
+if statement: Used when execution of a statement block
+depends on a condition.
+
+Syntax:
+
+if (condition) {
+    // number of statements
+}
+*/
+
+// Example:
+
+if (true) {
+    console.log("Hello World");
+    console.log("Hello World 2");
+    console.log("Hello World 3");
+}
+
+
+// Example with comparison:
+
+let age = 20;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+
+
+/*
+========================================================
+        IF-ELSE STATEMENT
+========================================================
+
+if-else statement is used when we have two blocks of
+statements and execution of one statement block depends
+on a condition.
+
+Syntax:
+
+if (condition) {
+    // number of statement block 1
+} else {
+    // number of statement block 2
+}
+*/
+
+// Example:
+
+let number = 10;
+
+if (number > 0) {
+    console.log("Number is positive");
+} else {
+    console.log("Number is negative");
+}
+
+
+// Another Example:
+
+if (false) {
+    console.log("Hello World 1");
+    console.log("Hello World 2");
+    console.log("Hello World 3");
+} else {
+    console.log("Hello World 4");
+    console.log("Hello World 5");
+    console.log("Hello World 6");
+}
+
+
+/*
+Note:
+
+{} are optional if we have only one statement in the
+statement block.
+
+Example:
+*/
+
+if (true)
+    console.log("Hello World");
+
+console.log("Hello World 2");
+console.log("Hello World 3");
+
+
+/*
+========================================================
+        ELSE-IF LADDER STATEMENT
+========================================================
+
+else-if ladder is used when we have a number of conditions.
+
+Syntax:
+
+if (condition1) {
+    // statements
+}
+else if (condition2) {
+    // statements
+}
+else if (condition3) {
+    // statements
+}
+else if (condition4) {
+    // statements
+}
+else {
+    // statements
+}
+*/
+
+// Example:
+
+let marks = 75;
+
+if (marks >= 90) {
+    console.log("Grade A+");
+}
+else if (marks >= 80) {
+    console.log("Grade A");
+}
+else if (marks >= 70) {
+    console.log("Grade B");
+}
+else if (marks >= 60) {
+    console.log("Grade C");
+}
+else {
+    console.log("Fail");
+}
+
+
+/*
+========================================================
+        NESTED IF-ELSE
+========================================================
+
+Nested if-else = if-else within if-else statement.
+
+It is used when one condition depends on another condition.
+
+Syntax:
+
+if (condition1) {
+
+    if (condition2) {
+        // statements
+    }
+    else {
+        // statements
+    }
+
+}
+else {
+    // statements
+}
+*/
+
+// Example:
+
+let a = 10;
+let b = 20;
+let c = 30;
+
+if (a < b) {
+
+    if (a < c) {
+        console.log(`${a} is smallest`);
+    }
+    else {
+        console.log(`${c} is smallest`);
+    }
+
+}
+else {
+    console.log(`${b} is smallest`);
+}
+
+
+/*
+========================================================
+        FIND SMALLEST NUMBER
+========================================================
+*/
+
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+let num3 = Number(prompt("Enter the third number:"));
+
+if (num1 < num2) {
+
+    if (num1 < num3) {
+        document.write(`${num1} is smallest`);
+    }
+    else {
+        document.write(`${num3} is smallest`);
+    }
+
+}
+else {
+
+    if (num2 < num3) {
+        document.write(`${num2} is smallest`);
+    }
+    else {
+        document.write(`${num3} is smallest`);
+    }
+
+}
+
+
+/*
+========================================================
+        SWITCH CASE STATEMENT
+========================================================
+
+Switch case statement is used to make a menu-based program.
+
+Syntax:
+
+switch (expression) {
+
+    case constant1:
+        // statements
+        break;
+
+    case constant2:
+        // statements
+        break;
+
+    case constant3:
+        // statements
+        break;
+
+    case constantN:
+        // statements
+        break;
+
+    default:
+        // statements
+}
+*/
+
+// Example:
+
+let day = Number(prompt("Enter day number:"));
+
+switch (day) {
+
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    case 3:
+        console.log("Wednesday");
+        break;
+
+    case 4:
+        console.log("Thursday");
+        break;
+
+    case 5:
+        console.log("Friday");
+        break;
+
+    case 6:
+        console.log("Saturday");
+        break;
+
+    case 7:
+        console.log("Sunday");
+        break;
+
+    default:
+        console.log("Invalid day number");
+}
+
+
+/*
+========================================================
+        SWITCH CASE - IMPORTANT
+========================================================
+
+break statement is used to stop the execution of the
+switch case.
+
+If break is not used, JavaScript will continue executing
+the next cases. This is called fall-through.
+*/
+
+
+/*
+========================================================
+        PRACTICE QUESTIONS
+========================================================
+
+1) WAP to print number of days in a month, when user
+   enters a month number.
+
+2) WAP to print day name when user enters a day number.
+
+3) WAP to make a simple calculator.
+
+4) WAP to check whether an entered character is:
+   - lowercase vowel
+   - lowercase consonant
+   - uppercase vowel
+   - uppercase consonant
+   - digit
+   - space
+   - any special character
+
+5) WAP to check whether a year is leap year or not.
+
+6) WAP to check whether a number is divisible by both
+   2 & 3, or 2 or 3, or neither 2 nor 3.
+*/
+
+
+/*
+========================================================
+        SIMPLE CALCULATOR USING SWITCH
+========================================================
+*/
+
+let firstNumber = Number(prompt("Enter the first number:"));
+let operator = prompt("Enter operator (+, -, *, /):");
+let secondNumber = Number(prompt("Enter the second number:"));
+
+switch (operator) {
+
+    case "+":
+        console.log(firstNumber + secondNumber);
+        break;
+
+    case "-":
+        console.log(firstNumber - secondNumber);
+        break;
+
+    case "*":
+        console.log(firstNumber * secondNumber);
+        break;
+
+    case "/":
+        console.log(firstNumber / secondNumber);
+        break;
+
+    default:
+        console.log("Invalid operator");
+}
+
+
+/*
+========================================================
+        LEAP YEAR
+========================================================
+
+A year is a leap year if:
+
+1) It is divisible by 400
+OR
+2) It is divisible by 4 but not divisible by 100
+*/
+
+let year = Number(prompt("Enter a year:"));
+
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log(`${year} is a leap year`);
+}
+else {
+    console.log(`${year} is not a leap year`);
+}
+
+
+/*
+========================================================
+        DIVISIBILITY BY 2 AND 3
+========================================================
+*/
+
+let num = Number(prompt("Enter the number:"));
+
+if (num % 2 === 0 && num % 3 === 0) {
+    console.log("Number is divisible by both 2 and 3");
+}
+else if (num % 2 === 0 || num % 3 === 0) {
+    console.log("Number is divisible by 2 or 3");
+}
+else {
+    console.log("Number is neither divisible by 2 nor 3");
+}
+
+
+/*
+========================================================
+        CHARACTER CHECK
+========================================================
+
+Check whether an entered character is:
+
+1) Lowercase vowel
+2) Lowercase consonant
+3) Uppercase vowel
+4) Uppercase consonant
+5) Digit
+6) Space
+7) Special character
+========================================================
+*/
+
+let ch = prompt("Enter a character:");
+
+if (ch >= "a" && ch <= "z") {
+
+    if ("aeiou".includes(ch)) {
+        console.log("Lowercase vowel");
+    }
+    else {
+        console.log("Lowercase consonant");
+    }
+
+}
+else if (ch >= "A" && ch <= "Z") {
+
+    if ("AEIOU".includes(ch)) {
+        console.log("Uppercase vowel");
+    }
+    else {
+        console.log("Uppercase consonant");
+    }
+
+}
+else if (ch >= "0" && ch <= "9") {
+    console.log("Digit");
+}
+else if (ch === " ") {
+    console.log("Space");
+}
+else {
+    console.log("Special character");
+}
+
+
+/*
+========================================================
+        FLOW CONTROL - COMPLETE STRUCTURE
+========================================================
+
+Flow Control Statements or Decision Making Statements
+
+i) Conditional Statements or Selection Statements
+
+   1. if statement
+   2. if-else statement
+   3. Nested if-else statement
+   4. if-else-if ladder statement
+   5. switch case statement
+
+
+ii) Iteration Statements or Loops
+
+   1. for loop
+   2. for...in loop
+   3. for...of loop
+   4. while loop
+   5. do...while loop
+   6. Nested loop
+
+
+iii) Jump Statements
+
+   1. break statement
+   2. continue statement
+*/
+
+
+/*
+========================================================
+        IMPORTANT POINTS TO REMEMBER
+========================================================
+
+1. if
+   -> Used to execute code when a condition is true.
+
+2. if-else
+   -> Used when there are two possible blocks.
+
+3. else-if ladder
+   -> Used when there are multiple conditions.
+
+4. Nested if-else
+   -> An if/else statement inside another if/else.
+
+5. switch
+   -> Used for multiple fixed/case-based choices.
+
+6. break
+   -> Stops the switch or loop immediately.
+
+7. default
+   -> Executes when no switch case matches.
+
+8. % (modulus)
+   -> Gives the remainder.
+   Example:
+   10 % 2 = 0
+   10 % 3 = 1
+
+9. && (AND)
+   -> All conditions must be true.
+
+10. || (OR)
+    -> At least one condition must be true.
+
+11. ===
+    -> Checks value and data type.
+
+12. !==
+    -> Checks whether value or data type is different.
+*/
+
+
+/*
+========================================================
+        ITERATION STATEMENTS / LOOPS
+========================================================
+
+Loops are used to execute a block of code repeatedly.
+
+1) for loop
+2) for...in loop
+3) for...of loop
+4) while loop
+5) do...while loop
+6) Nested loop
+
+These topics come after conditional statements.
+*/
+
+
+/*
+========================================================
+        JUMP STATEMENTS
+========================================================
+
+1) break statement
+   -> Terminates the loop or switch immediately.
+
+2) continue statement
+   -> Skips the current iteration and moves to the
+      next iteration.
+*/
+
+
+/*
+========================================================
+        END OF FLOW CONTROL NOTES
+========================================================
+*/
