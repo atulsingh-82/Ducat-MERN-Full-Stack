@@ -1,0 +1,652 @@
+77/*
+========================================================
+        JAVASCRIPT NOTES
+   CONDITIONAL / TERNARY + INCREMENT/DECREMENT
+========================================================
+*/
+
+
+// ======================================================
+// 1. CONDITIONAL / TERNARY OPERATOR (? :)
+// ======================================================
+
+/*
+Ternary Operator ka use tab hota hai jab hume
+condition ke according 2 statements me se ek
+statement execute karna ho.
+
+Syntax:
+
+condition ? statement1 : statement2;
+
+Agar condition TRUE hai  -> statement1
+Agar condition FALSE hai -> statement2
+*/
+
+
+// Example:
+
+let age = 20;
+
+age >= 18
+  ? console.log("You are eligible")
+  : console.log("You are not eligible");
+
+// Output:
+// You are eligible
+
+
+// ======================================================
+// 2. TERNARY OPERATOR WITH VARIABLE
+// ======================================================
+
+let number = 10;
+
+let result = number % 2 === 0
+  ? "Even"
+  : "Odd";
+
+console.log(result);
+
+// Output:
+// Even
+
+
+// ======================================================
+// 3. TERNARY OPERATOR WITH PROMPT
+// ======================================================
+
+/*
+Browser me prompt() user se input leta hai.
+
+prompt() ka result normally STRING hota hai.
+
+Isliye number ke liye Number() use karte hain.
+*/
+
+let num;
+
+if (typeof prompt !== "undefined") {
+  num = Number(prompt("Enter the number:"));
+} else {
+  num = 10; // default value for Node.js
+}
+
+num % 2 === 0
+  ? console.log(`${num} is even`)
+  : console.log(`${num} is odd`);
+
+
+// ======================================================
+// 4. TERNARY OPERATOR — SHORT FORM OF IF ELSE
+// ======================================================
+
+/*
+Normal if-else:
+
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Not Adult");
+}
+
+
+Ternary:
+
+age >= 18
+    ? console.log("Adult")
+    : console.log("Not Adult");
+*/
+
+
+// ======================================================
+// 5. TERNARY OPERATOR — ASSIGNING VALUE
+// ======================================================
+
+let marks = 75;
+
+let grade = marks >= 40 ? "Pass" : "Fail";
+
+console.log(grade);
+
+// Output:
+// Pass
+
+
+// ======================================================
+// 6. NESTED TERNARY
+// ======================================================
+
+/*
+Ternary ke andar ternary bhi use kar sakte hain.
+
+Lekin bahut zyada nested ternary code ko difficult
+bana deta hai. Aise case me if-else better hota hai.
+*/
+
+let marks2 = 85;
+
+let grade2 =
+    marks2 >= 90 ? "A+"
+  : marks2 >= 80 ? "A"
+  : marks2 >= 70 ? "B"
+  : marks2 >= 60 ? "C"
+  : marks2 >= 40 ? "D"
+  : "Fail";
+
+console.log(grade2);
+
+// Output:
+// A
+
+
+// ======================================================
+// HOMEWORK / PRACTICE
+// ======================================================
+
+//1. WAP to check whether two numbers are equal or not.
+
+
+//2. WAP to check whether a person can vote or not.
+
+//3. WAP to check whether a number is a perfect square or not.
+
+
+
+// Example 1: Two numbers equal or not
+
+let n1 = 10;
+let n2 = 10;
+
+console.log(
+    n1 === n2
+    ? "Both numbers are equal"
+    : "Numbers are not equal"
+);
+
+
+// Example 2: Voting eligibility
+
+let voterAge = 20;
+
+console.log(
+    voterAge >= 18
+    ? "Can vote"
+    : "Cannot vote"
+);
+
+
+// Example 3: Perfect Square
+
+let n = 25;
+let squareRoot = Math.sqrt(n);
+
+console.log(
+    Number.isInteger(squareRoot)
+    ? "Perfect Square"
+    : "Not a Perfect Square"
+);
+
+
+// ======================================================
+// 7. INCREMENT OPERATOR (++ )
+// ======================================================
+
+/*
+Increment ka matlab value ko 1 se increase karna.
+
+x++  -> x = x + 1
+++x  -> x = x + 1
+*/
+
+
+let x = 10;
+
+x++;
+
+console.log(x);
+
+// Output:
+// 11
+
+
+// ======================================================
+// 8. PRE-INCREMENT (++x)
+// ======================================================
+
+/*
+Pre-Increment:
+
+++x
+
+Pehle increment
+Phir value use hoti hai.
+*/
+
+let a = 10;
+
+let b = ++a;
+
+console.log(a); // 11
+console.log(b); // 11
+
+/*
+Step:
+
+a = 10
+
+++a
+a = 11
+
+b = 11
+*/
+
+
+// ======================================================
+// 9. POST-INCREMENT (x++)
+// ======================================================
+
+/*
+Post-Increment:
+
+x++
+
+Pehle current value use hoti hai.
+Uske baad increment hota hai.
+*/
+
+let c = 10;
+
+let d = c++;
+
+console.log(c); // 11
+console.log(d); // 10
+
+/*
+Step:
+
+c = 10
+
+d = c  -> 10
+
+then
+
+c = c + 1
+c = 11
+*/
+
+
+// ======================================================
+// 10. PRE vs POST INCREMENT
+// ======================================================
+
+/*
+
+PRE-INCREMENT
+--------------
+
+++x
+
+1. First Increment
+2. Then Assignment / Use
+
+
+POST-INCREMENT
+---------------
+
+x++
+
+1. First Assignment / Use
+2. Then Increment
+*/
+
+
+// Example:
+
+let p = 5;
+
+console.log(++p);
+
+// Output:
+// 6
+
+
+let q = 5;
+
+console.log(q++);
+
+// Output:
+// 5
+
+console.log(q);
+
+// Output:
+// 6
+
+
+// ======================================================
+// 11. DECREMENT OPERATOR (--)
+// ======================================================
+
+/*
+Decrement ka matlab value ko 1 se decrease karna.
+
+x--  -> x = x - 1
+--x  -> x = x - 1
+*/
+
+
+let value = 10;
+
+value--;
+
+console.log(value);
+
+// Output:
+// 9
+
+
+// ======================================================
+// 12. PRE-DECREMENT (--x)
+// ======================================================
+
+/*
+Pre-Decrement:
+
+--x
+
+1. First Decrement
+2. Then Assignment / Use
+*/
+
+let m = 10;
+
+let n3 = --m;
+
+console.log(m);  // 9
+console.log(n3); // 9
+
+
+// ======================================================
+// 13. POST-DECREMENT (x--)
+// ======================================================
+
+/*
+Post-Decrement:
+
+x--
+
+1. First Assignment / Use
+2. Then Decrement
+*/
+
+let r = 10;
+
+let s = r--;
+
+console.log(r); // 9
+console.log(s); // 10
+
+
+// ======================================================
+// 14. PRE vs POST DECREMENT
+// ======================================================
+
+/*
+
+PRE-DECREMENT
+-------------
+
+--x
+
+1. First Decrement
+2. Then Assignment / Use
+
+
+POST-DECREMENT
+--------------
+
+x--
+
+1. First Assignment / Use
+2. Then Decrement
+*/
+
+
+// ======================================================
+// 15. IMPORTANT EXAMPLE
+// ======================================================
+
+let A = 10;
+
+let B = A++;
+
+console.log("A =", A);
+console.log("B =", B);
+
+/*
+A = 11
+B = 10
+*/
+
+
+// Another:
+
+let C = 10;
+
+let D = ++C;
+
+console.log("C =", C);
+console.log("D =", D);
+
+/*
+C = 11
+D = 11
+*/
+
+
+// ======================================================
+// 16. COMBINING ++ AND --
+// ======================================================
+
+let z = 10;
+
+console.log(z++); // 10
+console.log(z);   // 11
+
+console.log(++z); // 12
+
+console.log(z--); // 12
+console.log(z);   // 11
+
+console.log(--z); // 10
+
+
+// ======================================================
+// 17. IMPORTANT: COMPLEX EXPRESSIONS
+// ======================================================
+
+/*
+Jab ek hi expression me multiple ++ / -- lagte hain,
+toh calculation ko step-by-step karna chahiye.
+
+Example:
+
+let a = 10;
+
+let b = a++ - --a;
+
+Step 1:
+a++ -> current value 10 use hogi
+a becomes 11
+
+Step 2:
+--a -> a becomes 10
+value = 10
+
+b = 10 - 10
+b = 0
+*/
+
+let aa = 10;
+
+let bb = aa++ - --aa;
+
+console.log("aa =", aa);
+console.log("bb =", bb);
+
+// Output:
+// aa = 10
+// bb = 0
+
+
+// ======================================================
+// 18. ANOTHER COMPLEX EXAMPLE
+// ======================================================
+
+let x1 = 10;
+
+let y1 = ++x1 + x1--;
+
+console.log("x1 =", x1);
+console.log("y1 =", y1);
+
+/*
+Step 1:
+++x1
+x1 = 11
+value = 11
+
+Step 2:
+x1--
+value = 11
+then x1 = 10
+
+Therefore:
+
+y1 = 11 + 11
+y1 = 22
+
+Final:
+x1 = 10
+y1 = 22
+*/
+
+
+// ======================================================
+// 19. QUICK REVISION
+// ======================================================
+
+/*
+
+TERNARY
+================================================
+
+condition ? trueValue : falseValue;
+
+
+INCREMENT
+================================================
+
+x++  -> Post-Increment
+++x  -> Pre-Increment
+
+
+PRE-INCREMENT
+================================================
+
+++x
+
+First Increment
+Then Use
+
+
+POST-INCREMENT
+================================================
+
+x++
+
+First Use
+Then Increment
+
+
+DECREMENT
+================================================
+
+x--  -> Post-Decrement
+--x  -> Pre-Decrement
+
+
+PRE-DECREMENT
+================================================
+
+--x
+
+First Decrement
+Then Use
+
+
+POST-DECREMENT
+================================================
+
+x--
+
+First Use
+Then Decrement
+*/
+
+
+// ======================================================
+// 20. EASY WAY TO REMEMBER
+// ======================================================
+
+/*
+
+++x
+↑
+Pehle change
+Baad me use
+
+
+x++
+↑
+Pehle use
+Baad me change
+
+
+--x
+↑
+Pehle decrease
+Baad me use
+
+
+x--
+↑
+Pehle use
+Baad me decrease
+*/
+
+
+// ======================================================
+// IMPORTANT NOTE
+// ======================================================
+
+/*
+++ aur -- ko complex expressions me unnecessarily
+mix karna avoid karo.
+
+Readable code ke liye:
+
+x++;
+x--;
+++x;
+--x;
+
+alag lines me use karna better hai.
+
+Aur const variable ke saath ++ / -- nahi laga sakte:
+
+const x = 10;
+
+// x++;  ❌ Error
+*/
